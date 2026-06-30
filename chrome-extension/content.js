@@ -198,8 +198,8 @@ function injectRubyCSS() {
     ruby-align: center;
   }
   rt {
-    font-size: 0.65em;
-    color: #3b82f6;
+    font-size: 1 em;
+    color: #3f6b87;
     user-select: none;
     pointer-events: none;
     font-weight: normal;
