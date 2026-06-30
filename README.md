@@ -33,6 +33,7 @@ The majority of the source data was adapted from the original ebirdHelper repo. 
 
 
 #### Appendix B. To-do
-- [ ] Change icon
+- [x] Change icon
 - [ ] Complete construction of uncommon characters
-- [ ] Add capability of selecting website
+- [ ] remove * from the highlight
+- [ ] adjust highlight logic
