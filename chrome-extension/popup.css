@@ -52,9 +52,9 @@ header {
 }
 
 .logo-img {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
 }
 
 header h1 {
