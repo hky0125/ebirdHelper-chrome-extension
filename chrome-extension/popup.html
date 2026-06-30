@@ -12,9 +12,8 @@
     <header>
       <div class="logo-area">
         <img src="icons/icon128.png" alt="Logo" class="logo-img">
-        <h1>eBird Helper</h1>
+        <h1> eBird Helper </h1>
       </div>
-      <div class="version">v0.90</div>
     </header>
 
     <main>
@@ -23,9 +22,7 @@
 
         <!-- Toggle: Translation -->
         <div class="setting-item">
-          <div class="setting-info">
-            <span class="setting-label">添加中文鸟名</span>
-          </div>
+          <div class="setting-info"> <span class="setting-label"> 添加中文鸟名 </span> </div>
           <label class="switch">
             <input type="checkbox" id="toggle-translation" checked>
             <span class="slider"></span>
@@ -36,7 +33,7 @@
         <div class="setting-item sub-setting">
           <div class="setting-info">
             <span class="setting-label">生僻字拼音注音</span>
-            <span class="setting-desc">为鸟名生僻字添加上方拼音</span>
+            <!-- <span class="setting-desc">为鸟名生僻字添加上方拼音</span> -->
           </div>
           <label class="switch">
             <input type="checkbox" id="toggle-ruby-pinyin" checked>
@@ -46,9 +43,7 @@
 
         <!-- Highlight Group -->
         <div class="setting-item highlight-group">
-          <div class="setting-info">
-            <span class="setting-label">高亮未见鸟种与特有种</span>
-          </div>
+          <div class="setting-info"> <span class="setting-label">高亮鸟种</span> </div>
           <label class="switch">
             <input type="checkbox" id="toggle-highlight-group" checked>
             <span class="slider"></span>
@@ -59,7 +54,7 @@
         <div class="setting-item sub-setting highlight-child">
           <div class="setting-info">
             <span class="setting-label">未见鸟种</span>
-            <span class="setting-desc">将您的生涯清单未收集的鸟种进行高亮</span>
+            <!-- <span class="setting-desc">将您的生涯清单未收集的鸟种进行高亮</span> -->
           </div>
           <label class="switch">
             <input type="checkbox" id="toggle-highlight" checked>
@@ -71,7 +66,7 @@
         <div class="setting-item sub-setting highlight-child">
           <div class="setting-info">
             <span class="setting-label">单国特有鸟种</span>
-            <span class="setting-desc">使用不同颜色高亮单国特有鸟种</span>
+            <!-- <span class="setting-desc">使用不同颜色高亮单国特有鸟种</span> -->
           </div>
           <label class="switch">
             <input type="checkbox" id="toggle-endemic" checked>
@@ -82,8 +77,8 @@
         <!-- Toggle: Pinyin Search -->
         <div class="setting-item">
           <div class="setting-info">
-            <span class="setting-label">拼音快速检索</span>
-            <span class="setting-desc">记录清单输入框中输入拼音首字母进行快速定位</span>
+            <span class="setting-label">记录清单拼音快速检索</span>
+            <!-- <span class="setting-desc">记录清单输入框中输入拼音首字母进行快速定位</span> -->
           </div>
           <label class="switch">
             <input type="checkbox" id="toggle-pinyin" checked>
@@ -91,6 +86,10 @@
           </label>
         </div>
       </section>
+
+
+
+
 
       <!-- Styling Options -->
       <section class="section">
@@ -115,31 +114,41 @@
         </div>
       </section>
 
+
+
+
+
+
       <!-- Cache & Action Settings -->
       <section class="section">
+        
         <div class="cache-status">
-          <span>已缓存生涯鸟种: </span>
-          <strong id="species-count">0</strong> 种
+          <span class="setting-label">已缓存生涯鸟种: </span>
+          <strong id="species-count"> 0 </strong> 种
         </div>
 
-        <p class="cache-hint">
-          * 打开 eBird 的 <a href="https://ebird.org/lifelist?time=life&r=world" target="_blank" class="link">生涯清单页面</a>
-          会自动拉取并更新此缓存。
-        </p>
-
         <div class="button-group">
-          <button id="btn-clear-cache" class="btn btn-secondary">清空已见缓存</button>
+          <button id="btn-clear-cache" class="btn btn-secondary"> 清空已见缓存 </button>
+
           <a href="https://ebird.org/lifelist?time=life&r=world" target="_blank"
             class="btn btn-primary btn-link-action">去更新清单</a>
         </div>
+
       </section>
     </main>
 
+
+
+
+
+
     <footer>
-      <span>Adapted from <a href="https://github.com/wzy0421/ebirdHelper">wzy0421/ebirdHelper</a> • eBird Helper Chrome
-        Extension</span>
+      <span>Adapted from <a href="https://github.com/wzy0421/ebirdHelper">wzy0421/ebirdHelper</a></span>
     </footer>
+
   </div>
+
+
   <script src="popup.js"></script>
 </body>
 

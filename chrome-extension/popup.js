@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   updateSpeciesCountDisplay();
 
+
+  
   // Save Switch Settings
   const saveToggleSetting = (key, checkbox) => {
     chrome.storage.sync.set({ [key]: checkbox.checked });
@@ -114,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   togglePinyin.addEventListener('change', () => saveToggleSetting('enablePinyin', togglePinyin));
+
+
 
   // Save Color Picker Settings
   const saveColorSetting = (colorKey, valEl, colorInput) => {
