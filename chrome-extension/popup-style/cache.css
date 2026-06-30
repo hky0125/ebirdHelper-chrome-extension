@@ -1,0 +1,59 @@
+/* Cache Info & Buttons */
+.cache-status {
+  font-size: 13.5px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding-left: 6px ;
+}
+
+.cache-status strong {
+  color: var(--primary-hover);
+  font-size: 18px;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 4px;
+  margin-top: 8px;
+  padding: 2px ;
+}
+
+.btn {
+  flex: 1;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: var(--btn-shadow);
+}
+
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.btn-link-action {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

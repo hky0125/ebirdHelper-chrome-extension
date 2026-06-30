@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     enableHighlight: true,
     highlightEndemic: true,
     enablePinyin: true,
-    colorHighlight: '#a35f00',
-    colorEndemic: '#c0262e'
+    colorHighlight: '#ff8d28',
+    colorEndemic: '#ff2d55'
   };
 
   // Helper to handle dependencies

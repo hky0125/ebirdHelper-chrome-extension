@@ -1,8 +1,9 @@
 /* eBird Helper Popup */
 @import url("popup-style/header.css");
 @import url("popup-style/footer.css");
-@import url("popup-style/part.css");
-
+@import url("popup-style/slider.css");
+@import url("popup-style/colorpicker.css");
+@import url("popup-style/cache.css");
 
 :root {
   --bg-color: rgb(242, 242, 247);
@@ -37,37 +38,26 @@ body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
   color: var(--text-color);
-  width: 320px;
-  font-size: 14px;
-  line-height: 1.2;
+  width: 250px;
+  font-size: 13.5px;
+  line-height: 1.0;
   overflow-x: hidden;
 }
 
 .container {
-  padding: 12px;
+  padding: 6px;
 }
 
 
 /* Sections */
 .section {
   background-color: var(--card-bg);
-  /* border: 1px solid var(--border-color); */
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   box-shadow: var(--card-shadow);
 }
 
-.section-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-desc);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 4px;
-}
 
 /* Settings Items & Switch Toggles */
 .setting-item {
@@ -89,7 +79,7 @@ body {
 }
 
 .sub-setting {
-  margin-left: 16px;
+  margin-left: 12px;
   padding-left: 12px;
   border-left: 2px solid var(--border-color);
 }
@@ -97,84 +87,10 @@ body {
 .setting-info {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .setting-label {
   font-weight: 500;
   font-size: 13.5px;
-}
-
-.setting-desc {
-  font-size: 11px;
-  color: var(--text-desc);
-  margin-top: 1px;
-}
-
-
-
-
-/* Cache Info & Buttons */
-.cache-status {
-  font-size: 13px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  padding-left: 6px ;
-}
-
-.cache-status strong {
-  color: var(--primary-color);
-  font-size: 15px;
-}
-
-
-.button-group {
-  display: flex;
-  gap: 8px;
-  margin: 6px;
-  padding: 2px ;
-}
-
-.btn {
-  flex: 1;
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: 500;
-  padding: 7px 12px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.2s, transform 0.1s;
-  box-shadow: var(--btn-shadow);
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary-hover);
-}
-
-.btn-secondary {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color) 0;
-}
-
-.btn-secondary:hover {
-  background-color: var(--secondary-hover);
-}
-
-.btn-link-action {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
