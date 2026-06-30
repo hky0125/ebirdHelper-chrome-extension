@@ -38,14 +38,14 @@ body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
   color: var(--text-color);
-  width: 250px;
+  width: 275px;
   font-size: 13.5px;
   line-height: 1.0;
   overflow-x: hidden;
 }
 
 .container {
-  padding: 6px;
+  padding: 12px;
 }
 
 

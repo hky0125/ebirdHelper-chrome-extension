@@ -62,10 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleHighlightGroup.checked = settings.enableHighlight || settings.highlightEndemic;
 
     // Populate Color Pickers
-    colorHighlight.value = settings.colorHighlight;
-    colorHighlightVal.textContent = settings.colorHighlight;
-    colorEndemic.value = settings.colorEndemic;
-    colorEndemicVal.textContent = settings.colorEndemic;
+    colorHighlight.value = settings.colorHighlight; //colorHighlightVal.textContent = settings.colorHighlight;
+    colorEndemic.value = settings.colorEndemic; //colorEndemicVal.textContent = settings.colorEndemic;
 
     // Update UI dependency state
     updateRubyPinyinUIState();
